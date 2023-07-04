@@ -1,0 +1,525 @@
+@import url(../fonts/Inter/stylesheet.css);
+@import url(../fonts/ReadexPro/stylesheet.css);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #000000;
+}
+li {
+    list-style: none;
+}
+.container {
+    max-width: 1294px;
+    margin: 0 auto;
+    width: 100%;
+}
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
+.navigation .nav {
+    display: flex;
+}
+.nav li {
+    margin-left: 44px;
+}
+.nav li:first-child {
+    margin-left: 0;
+}
+.right img {
+    margin-right: 22px;
+}
+
+.first-screen {
+    margin-top: 28px;
+    background: #DCE5E2;
+    border-radius: 32px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.first-screen::before {
+    position: absolute;
+    content: url(../img/Vector.png);
+    top: 263px;
+    left: 19px;
+    cursor: pointer;
+}
+.first-screen::after {
+    position: absolute;
+    content: url(../img/Vector.png);
+    top: 263px;
+    right: 19px;
+    transform: rotate(180deg);
+    cursor: pointer;
+}
+.screen-left {
+    padding-top: 145px;
+    padding-left: 56px;
+}
+.screen-left h1 {
+    font-family: 'Readex Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 70px;
+    color: #000000;
+}
+.screen-left p {
+    margin-top: 19px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+.btn {
+    margin-top: 30px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: capitalize;
+    color: #000000;
+    padding: 14px 53px;
+    border: 1px solid #000000;
+    border-radius: 200px;
+    display: inline-block;
+}
+.screen-bottom {
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.screen-bottom .line {
+    width: 194px;
+    height: 2px;
+    background: #000000;
+    margin-left: 34px;
+}
+.screen-bottom .line:first-child {
+    margin-left: 0;
+}
+.shop {
+    margin-top: 75px;
+}
+.shop h1 {
+    font-family: 'Readex Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 52px;
+    text-align: center;
+    color: #000000;
+}
+.shop p {
+    margin-top: 9px;
+    font-family: 'Readex Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #000000;
+}
+.shop .shop-content {
+    margin-top: 55px;
+    display: grid;
+    grid-template-columns: 639px 312px 312px;
+    column-gap: 16px;
+}
+.box {
+    overflow: hidden;
+    background: #FFFFFF;
+    filter: drop-shadow(0px 4px 35px rgba(0, 0, 0, 0.25));
+}
+.box p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    text-align: right;
+    color: #000000;
+}
+.box h2 {
+    font-family: 'Readex Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: right;
+    color: #000000;
+}
+.notebook {
+    height: 472px;
+    padding-right: 42px;
+    padding-left: 42px;
+}
+.iphone {
+    height: 792px;
+    padding: 144px 0;
+    padding-left: 16px;
+}
+.iphone p {
+    margin-top: 41px;
+    text-align: center;
+}
+.iphone h2 {
+    text-align: center;
+}
+.ipad {
+    height: 792px;
+    padding: 115px 0;
+}
+.ipad p {
+    text-align: center;
+}
+.ipad h2 {
+    text-align: center;
+    margin-bottom: 42px;
+}
+.iwatch {
+    margin-top: 72px;
+    display: flex;
+    padding: 0 42px;
+}
+.iwatch .iwatch-info {
+    padding: 87px 0;
+}
+.save {
+    margin-top: 78px;
+    padding-bottom: 27px;
+}
+.section-title {
+    font-family: 'Readex Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 52px;
+    text-align: center;
+    color: #000000;
+}
+.section-subtitle {
+    font-family: 'Readex Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+    color: #000000;
+    text-align: center;
+}
+.save .save-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 31px;
+}
+.save .save-content .content {
+    width: 302.5px;
+    padding-top: 28px;
+    height: 396px;
+    position: relative;
+}
+.save .content img {
+    width: 247px;
+    display: flex;
+    margin: 0 auto;
+}
+.save .content h2 {
+    margin-top: 37px;
+    font-family: 'Readex Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    color: #000000;
+}
+.save .content p {
+    margin-top: 9px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #4B4B4B;
+    text-align: start;
+    width: 261px;
+}
+.save .content span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+}
+.see {
+    padding: 47px 0 28px;
+}
+.see .see-content {
+    margin-top: 56px;
+    display: flex;
+    justify-content: space-between;
+}
+.see .see-content .content {
+    background: #F8F9FA;
+    border-radius: 16px;
+    text-align: center;
+    margin-left: 28px;
+    padding: 41px 0 28px;
+}
+.see .see-content .content img {
+    margin-top: 30px;
+}
+.see .see-content .content:first-child {
+    margin-left: 0;
+}
+.idaas {
+    padding: 47px 0 24px;
+}
+.ideas .ideas-content {
+    display: flex;
+    margin-top: 56px;
+}
+.ideas .content-right {
+    margin-left: 35px;
+}
+.ideas .content-right p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    color: #000000;
+    margin-top: 28px;
+}
+.ideas .see-all {
+    width: 109px;
+    margin: 74px auto;
+}
+.ideas a {
+    display: inline-block;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: capitalize;
+    color: #000000;
+    position: relative;
+}
+.ideas a img {
+    position: absolute;
+    left: 80px;
+}
+.looking {
+    padding: 51px 0 19px;
+}
+.looking .search {
+    width: 650px;
+    margin: 0 auto;
+    margin-top: 39px;
+}
+.looking .search label {
+    position: relative;
+}
+.looking .search input {
+    width: 650px;
+    background: #F8F9FA;
+    border: 1px solid #C5C5C5;
+    border-radius: 100px;
+    padding: 22px 0;
+    padding-left: 67px;
+}
+.looking .search input::placeholder {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+.looking .search img {
+    position: absolute;
+    top: -5px;
+    left: 25px;
+    cursor: pointer;
+}
+.katigories {
+    width: max-content; 
+    margin: 0 auto;
+    margin-top: 18px;
+}
+.katigories button {
+    padding: 12px 22px 13px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    background: #FFFFFF;
+    border: 1px solid #C5C5C5;
+    border-radius: 200px;
+    margin-left: 7px;
+    cursor: pointer;
+}
+.katigories button:first-child {
+    margin-left: 0;
+}
+.katigories-bottom {
+    margin-top: 7px;
+}
+.never {
+    background: #DCE5E2;
+    border-radius: 16px;
+    width: 935px;
+    margin: 0 auto;
+    margin-top: 68px;
+    text-align: center;
+    padding: 47px 0 43px;
+}
+.never img {
+    margin: 14px 0;
+}
+.never .email-form {
+    width: 400px;
+    margin-left: 267px;
+}
+.never .email-form label {
+    display: flex;
+}
+.never .email-form input {
+    padding: 16px 0 17px;
+    padding-left: 32px;
+    background: #DCE5E2;
+    border: 1px solid #000000;
+    border-radius: 54px 0px 0px 54px;
+    width: 285px;
+}
+.never .email-form input::placeholder {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+.never .email-form button {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 115px;
+    background: #000000;
+    border-radius: 0px 200px 200px 0px;
+    cursor: pointer;
+}
+.footer {
+    background: #F8F9FA;
+    padding-top: 44px;
+    padding-left: 73px;
+    position: relative;
+}
+.footer::before {
+    position: absolute;
+    content: "";
+    width: 1350px;
+    height: 1px;
+    background: #DCE5E2;
+    top: 299px;
+    left: 45px;
+}
+.footer .footer-top {
+    display: flex;
+}
+.footer .footer-one p {
+    margin-top: 19px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+.footer .footer-top li {
+    margin-top: 14px;
+}
+.footer .footer-top .li-title {
+    font-family: 'Readex Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    color: #000000;
+    margin-top: 0;
+}
+.footer .footer-top li a{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+}
+.footer .footer-top .footer-two {
+    margin-left: 118px;
+}
+.footer .footer-top .footer-three {
+    margin-left: 93px;
+}
+.footer .footer-top .footer-four {
+    margin-left: 121px;
+}
+.footer .footer-top .footer-five {
+    margin-left: 134px;
+}
+.footer .footer-bottom {
+    margin-top: 131px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer .footer-bottom a {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    position: relative;
+}
+.footer .footer-bottom a:last-child {
+    margin-right: 24px;
+}
+.footer .footer-bottom a img {
+    position: absolute;
+    top: -2px;
+}
+.footer .footer-bottom a span {
+    font-family: 'Readex Pro';
+}
